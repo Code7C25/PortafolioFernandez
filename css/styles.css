@@ -98,7 +98,7 @@ section h2 {
 
 footer {
   text-align: center; /* Centra el texto dentro del pie de página */
-  font-size: 0.9rem; /* Establece el tamaño de la fuente para el texto del pie de página */
+  font-size: 1.3rem; /* Establece el tamaño de la fuente para el texto del pie de página */
   color: #777; /* Establece el color del texto como gris claro */
   margin-top: 50px; /* Añade un margen superior de 50px */
   padding: 20px; /* Añade un padding de 20px dentro del pie de página */
