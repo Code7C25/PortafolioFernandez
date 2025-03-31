@@ -1,0 +1,151 @@
+
+* {
+  margin: 0; /* Elimina el margen por defecto de todos los elementos */
+  padding: 0; /* Elimina el padding por defecto de todos los elementos */
+  box-sizing: border-box; /* Hace que los tamaños de los elementos incluyan el padding y el borde */
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif; /* Establece la fuente para todo el cuerpo */
+  background: linear-gradient(to right, #fdfcfb, #e2d1c3); /* Establece un fondo con un gradiente de colores */
+  color: #333; /* Establece el color del texto como gris oscuro */
+  line-height: 1.6; /* Establece el interlineado */
+  padding: 20px; /* Añade un padding de 20px alrededor de todo el cuerpo */
+}
+
+body > * {
+  max-width: 900px; /* Limita el ancho de todos los elementos dentro del body a 900px */
+  margin: 0 auto; /* Centra todos los elementos dentro del body */
+}
+
+/* Estilo para el header (cabecera) */
+header {
+  display: flex; /* Utiliza un diseño de flexbox para organizar el contenido */
+  align-items: center; /* Centra verticalmente los elementos en el header */
+  justify-content: space-between; /* Distribuye el espacio entre el nombre y la foto */
+  padding: 30px 20px; /* Añade padding a los lados del header */
+  background-color: #ffffffcc; /* Establece un color de fondo blanco semitransparente */
+  border-radius: 15px; /* Redondea las esquinas del header */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor del header */
+  margin-bottom: 40px; /* Añade un margen inferior de 40px */
+}
+
+.foto-perfil {
+  width: 100px; /* Establece el ancho de la foto de perfil */
+  height: 100px; /* Establece la altura de la foto de perfil */
+  border-radius: 50%; /* Hace que la foto sea circular */
+  object-fit: cover; /* Hace que la imagen cubra completamente el contenedor */
+  border: 3px solid #2a9d8f; /* Añade un borde de 3px de color verde */
+}
+
+.info-header {
+  display: flex; /* Utiliza flexbox para organizar el contenido del header */
+  flex-direction: column; /* Organiza los elementos en columna */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+header h1 {
+  font-size: 2.5rem; /* Establece el tamaño de la fuente para el nombre */
+  color: #2a9d8f; /* Establece el color del texto como verde */
+  margin-bottom: 5px; /* Añade un margen inferior de 5px */
+}
+
+section {
+  background-color: #ffffffee; /* Establece el color de fondo para las secciones como blanco con opacidad */
+  padding: 30px; /* Añade un padding de 30px a las secciones */
+  margin-bottom: 30px; /* Añade un margen inferior de 30px */
+  border-radius: 15px; /* Redondea las esquinas de las secciones */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05); /* Añade una sombra sutil alrededor de las secciones */
+}
+
+section h2 {
+  color: #264653; /* Establece el color del texto del título de la sección como azul oscuro */
+  font-size: 1.8rem; /* Establece el tamaño de la fuente del título de la sección */
+  margin-bottom: 15px; /* Añade un margen inferior de 15px */
+}
+
+.sobre-mi p {
+  font-size: 1.1rem; /* Establece el tamaño de la fuente del texto en la sección sobre mí */
+  color: #444; /* Establece el color del texto como gris oscuro */
+}
+
+.estudios {
+  display: flex; /* Utiliza flexbox para organizar los proyectos en una fila */
+  flex-direction: column; /* Organiza los proyectos en una columna */
+  gap: 15px; /* Añade un espacio de 15px entre los proyectos */
+}
+
+.tarjeta-proyecto {
+  padding: 15px; /* Añade un padding de 15px dentro de cada tarjeta de proyecto */
+  border-left: 6px solid #2a9d8f; /* Añade un borde izquierdo de 6px de color verde */
+  background-color: #f0fdfb; /* Establece un fondo de color muy claro */
+  border-radius: 10px; /* Redondea las esquinas de las tarjetas */
+  transition: transform 0.2s ease; /* Añade una transición suave cuando la tarjeta se transforma */
+}
+
+.tarjeta-proyecto:hover {
+  transform: scale(1.02); /* Aumenta ligeramente el tamaño de la tarjeta cuando se pasa el mouse sobre ella */
+}
+
+.tarjeta-proyecto h3 {
+  margin-bottom: 5px; /* Añade un margen inferior de 5px al título de la tarjeta */
+  color: #1d3557; /* Establece el color del título como un azul oscuro */
+}
+
+.tarjeta-proyecto p {
+  color: #555; /* Establece el color del texto dentro de las tarjetas como gris medio */
+}
+
+footer {
+  text-align: center; /* Centra el texto dentro del pie de página */
+  font-size: 0.9rem; /* Establece el tamaño de la fuente para el texto del pie de página */
+  color: #777; /* Establece el color del texto como gris claro */
+  margin-top: 50px; /* Añade un margen superior de 50px */
+  padding: 20px; /* Añade un padding de 20px dentro del pie de página */
+}
+/* ===== PROYECTOS ===== */
+.proyectos { 
+  background-color: #ffffffee; /* Fondo blanco con transparencia */
+  padding: 30px; /* Espaciado interno de 30px */
+  margin-bottom: 30px; /* Margen inferior de 30px */
+  border-radius: 15px; /* Bordes redondeados de 15px */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05); /* Sombra sutil para darle profundidad */
+}
+
+.proyectos h2 { 
+  color: #264653; /* Color del título azul oscuro */
+  font-size: 1.8rem; /* Tamaño de fuente de 1.8 rem */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  text-align:left; /* Centra el texto */
+}
+
+.galeria-proyectos { 
+  display: flex; /* Usa flexbox para organizar los proyectos */
+  flex-wrap: wrap; /* Permite que los proyectos se acomoden en varias líneas si no caben */
+  gap: 20px; /* Espacio entre los elementos */
+  justify-content: center; /* Centra los proyectos en la sección */
+}
+
+.proyecto { 
+  flex: 1 1 250px; /* Cada proyecto tendrá un tamaño mínimo de 250px y se ajustará automáticamente */
+  background-color: #f0fdfb; /* Fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 15px; /* Espaciado interno */
+  text-align: center; /* Centra el contenido dentro del proyecto */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de tarjeta */
+  transition: transform 0.2s ease; /* Efecto suave al hacer hover */
+}
+
+.proyecto:hover { 
+  transform: scale(1.04); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.proyecto img { 
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: 150px; /* Altura fija de 150px */
+  object-fit: contain; /* La imagen se ajusta para llenar el espacio sin deformarse */
+  border-radius: 8px; /* Bordes redondeados en la imagen */
+  margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+
