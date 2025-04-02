@@ -147,5 +147,85 @@ footer {
   border-radius: 8px; /* Bordes redondeados en la imagen */
   margin-bottom: 10px; /* Espacio entre la imagen y el texto */
 }
+/* Botón de modo oscuro en la parte superior derecha */
+.boton-modo {
+  position: fixed;  /* Fija el botón en la pantalla */
+  bottom: 20px;  /* Lo coloca en la parte inferior */
+  right: 20px;  /* Lo posiciona a la derecha */
+  padding: 10px 15px;
+  background-color: #2a9d8f;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
 
+.boton-modo:hover {
+  background-color: #21867a;
+}
+
+/* Modo oscuro */
+.dark-mode {
+  background: #212121; /* Fondo oscuro */
+  color: #ffffff; /* Texto claro */
+}
+
+.dark-mode section {
+  background: #1E1E1E; /* Fondo oscuro de secciones */
+  color: #ffffff;
+}
+
+.dark-mode header {
+  background-color: #1E1E1E;
+}
+
+.dark-mode .tarjeta-proyecto {
+  background: #2A2A2A; /* Fondo más oscuro para proyectos */
+  color: #ffffff; /* Texto claro */
+  border-left: 6px solid #6FCF97; /* Verde claro */
+}
+
+.dark-mode h2  {
+  color: #ffffff; /* Títulos en blanco */
+}
+
+.dark-mode .boton-modo {
+  background-color: #6FCF97; /* Verde claro */
+  color: #121212; /* Texto oscuro */
+}
+
+.dark-mode .boton-modo:hover {
+  background-color: #57A57F;
+}
+.dark-mode section {
+  background: #1E1E1E; /* Fondo oscuro de las secciones */
+  color: #ffffff; /* Texto claro dentro de los recuadros */
+}
+
+.dark-mode .sobre-mi p,
+.dark-mode .experiencias p,
+.dark-mode .proyectos p,
+.dark-mode .tarjeta-proyecto p {
+  color: #ffffff; /* Color de texto claro dentro de los recuadros */
+}
+
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3 {
+  color: #ffffff; /* Títulos en color blanco */
+}
+
+.dark-mode .proyecto {
+  background-color: #333; /* Fondo gris oscuro */
+  color: #ffffff; /* Texto en blanco */
+}
+
+.dark-mode .proyecto h3 {
+  color: #f0f0f0; /* Color más claro para los títulos */
+}
+
+.dark-mode .proyecto p {
+  color: #e0e0e0; /* Texto en un tono gris claro */
+}
 
